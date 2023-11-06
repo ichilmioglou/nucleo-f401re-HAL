@@ -5,30 +5,32 @@ project(NUCLEO-F401)
 
 include(${CMAKE_SOURCE_DIR}/arm-gcc-toolchain.cmake)
 
-set(STM_HAL_LIBRARY_PATH    "../../extern/STM32CubeF4")
+set(STM_HAL_LIBRARY_PATH    "../../extern/stm32f4xx_hal_driver")
 set(CMSIS_DEVICE_F4_PATH    "../../extern/cmsis_device_f4")
 
 file(GLOB SOURCES 
     ${CMAKE_SOURCE_DIR}/src/*.cpp
+    ${CMAKE_SOURCE_DIR}/src/*.c
     ${CMAKE_SOURCE_DIR}/src/startup_stm32f401xe.s
-    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+    # ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
     ${CMAKE_SOURCE_DIR}/lib/SEGGER_RTT/*.c
-    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
-    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
-    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
-    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
-    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
-    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Src/stm32f4xx_hal.c
+    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Src/stm32f4xx_hal_cortex.c
+    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Src/stm32f4xx_hal_rcc.c
+    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Src/stm32f4xx_hal_flash.c
+    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Src/stm32f4xx_hal_flash_ex.c
+    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Src/stm32f4xx_hal_gpio.c
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_include_directories(${PROJECT_NAME} PUBLIC
     ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/lib/CMSIS_5
     ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Drivers/CMSIS/Core/Include
     ${CMAKE_SOURCE_DIR}/${CMSIS_DEVICE_F4_PATH}/Include
     ${CMAKE_SOURCE_DIR}/lib/SEGGER_RTT
-    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Drivers/STM32F4xx_HAL_Driver/Inc
+    ${CMAKE_SOURCE_DIR}/${STM_HAL_LIBRARY_PATH}/Inc
 )
 
 target_compile_options(${PROJECT_NAME} PUBLIC
