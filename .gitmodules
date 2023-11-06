@@ -1,0 +1,6 @@
+[submodule "extern/cmsis_device_f4"]
+	path = extern/cmsis_device_f4
+	url = https://github.com/STMicroelectronics/cmsis_device_f4.git
+[submodule "extern/STM32CubeF4"]
+	path = extern/STM32CubeF4
+	url = https://github.com/STMicroelectronics/STM32CubeF4.git
