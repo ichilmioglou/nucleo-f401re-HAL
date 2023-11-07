@@ -1,0 +1,22 @@
+CMakeFiles/NUCLEO-F401.dir/lib/SEGGER_RTT/SEGGER_RTT_printf.c.o: \
+ /home/ilker/workspace/nucleo-f401re-HAL/examples/1-GPIO/lib/SEGGER_RTT/SEGGER_RTT_printf.c \
+ /home/ilker/workspace/nucleo-f401re-HAL/examples/1-GPIO/lib/SEGGER_RTT/SEGGER_RTT.h \
+ /home/ilker/workspace/nucleo-f401re-HAL/examples/1-GPIO/lib/SEGGER_RTT/SEGGER_RTT_Conf.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/stdlib.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/alloca.h \
+ /usr/share/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h
