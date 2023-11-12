@@ -1,0 +1,9 @@
+si 1
+speed 400
+if SWD
+device STM32F401RE
+r
+loadfile NUCLEO-F401.bin 0x08000000
+r
+g
+exit
