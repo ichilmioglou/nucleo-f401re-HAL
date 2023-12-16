@@ -4,6 +4,6 @@
 [submodule "extern/stm32f4xx_hal_driver"]
 	path = extern/stm32f4xx_hal_driver
 	url = https://github.com/STMicroelectronics/stm32f4xx_hal_driver.git
-[submodule "examples/examples/lvgl-demo/lvgl"]
-	path = examples/examples/lvgl-demo/lvgl
+[submodule "examples/lvgl-demo/lvgl"]
+	path = examples/lvgl-demo/lvgl
 	url = https://github.com/lvgl/lvgl.git
